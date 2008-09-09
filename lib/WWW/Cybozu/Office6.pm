@@ -23,9 +23,9 @@ sub new {
     %{ $self } = @_;
 
     my $pit = pit_get("cybozu6", require => {
-        userid   => "user ID on Cybozu6",
+        userid   => "user ID on Cybozu6 (digit)",
         password => "password on Cybozu6",
-        base_url => "base URL of Cybozu6",
+        base_url => "base URL of Cybozu6 (http://.../ag.cgi)",
     });
     for (keys %$pit) {
         $self->{$_} = $pit->{$_};
