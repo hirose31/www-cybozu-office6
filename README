@@ -1,0 +1,51 @@
+WW-Cybozu-Office6
+
+= ABOUT =
+
+Cybozu Office 6 を操作するための Perl モジュールです。
+
+いまのところ、自分が必要な機能だけしか実装していないので、できることはこんな
+感じです。
+
+  - スケジュールの参照、追加、削除
+  - タイムカードの参照、更新
+  - ToDoの参照、追加、削除
+
+機能を追加、修正したくなったら、ソースコードは github にありますので fork し
+ていじってもらえればいいと思います。で、安定してきたら pull request もらえる
+とうれしいです。
+
+https://github.com/hirose31/www-cybozu-office6/tree
+
+あと、α版なので、安定性とか互換性とかは笑って許してください。パッチは
+welcome っす。
+
+= TEST =
+
+動作確認は v6.5 (1.2) でやってます。
+
+prove -lv xxt で実際に Cybozu Office にアクセスして、ユニットテストが行えま
+す。が、(Config::Pitを使って) ローカルにパスワードを保存する必要があるのと、
+万が一バグってたりするとへんなデータを登録したり削除しちゃったりするかもしれ
+ないので予め覚悟してください。
+
+= INSTALLATION =
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+
+= COPYRIGHT AND LICENCE =
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+
+
+# Local Variables:
+# coding: utf-8
+# End:
