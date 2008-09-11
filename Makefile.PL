@@ -12,6 +12,6 @@ requires 'URI'                => 0;
 test_requires 'Test::More' => 0;
 
 use_test_base;
-auto_install;
+auto_include_deps;
 WriteAll;
 
