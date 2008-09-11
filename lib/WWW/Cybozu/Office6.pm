@@ -1,5 +1,7 @@
 package WWW::Cybozu::Office6;
 
+use 5.8.1;
+
 use strict;
 use warnings;
 use utf8;
